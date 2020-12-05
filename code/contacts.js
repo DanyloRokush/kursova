@@ -69,16 +69,16 @@ function setSuccessFor(input){
 
 
 function isFirstName(firstName){
-	return /^[A-Z]{1}(([a-z]{1,})?(\'{1})?[A-Za-z]{1,}){1}(([\s|\-]{1}[A-Za-z]{1}(([a-z]{1,})?(\'{1})?[a-z]{1,}){1}){1,})?$/.test(firstName);
+	return /^$/.test(firstName);
 
 }
 function isMessage(message){
-	return /^[A-Z]{1}(([a-z]{1,})?(\'{1})?[A-Za-z]{1,}){1}(([\s|\-]{1}[A-Za-z]{1}(([a-z]{1,})?(\'{1})?[a-z]{1,}){1}){1,})?$/.test(lastName);
+	return /^$/.test(lastName);
 }
 
 
 function isEmail(email){
-	return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/.test(pass);
+	return /^$/.test(pass);
 }
 
 

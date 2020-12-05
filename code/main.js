@@ -37,9 +37,9 @@ function setSuccessFor(input){
 	formControl.className = 'form-control success';
 }
 function isFirstName(firstName){
-	return /[a-z]/.test(firstName);
+	return /^$/.test(firstName);
 
 }
 function isePhone(phone){
-	return /[a-z]/.test(phone);
+	return /^$/.test(phone);
 }

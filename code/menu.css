@@ -134,14 +134,16 @@ html,body{
 	}
 	.header__menu{
 		position:fixed;
-		top:-140%;
+		top:-160%;
 		left:0;
 		width:100%;
-		height:120%;
-		
-		background-color:#18b5a4;
+		height:150%;
+		overflow:auto;
+		background-color:#9fa9d7;
 		padding: 70px 10px 20px 10px;
 		transition:all 0.4s ease 0s;
+		opacity:0.96;
+
 	}
 	.header__menu.active{
 		top:0;
@@ -167,4 +169,7 @@ html,body{
 	.content{
 		padding:60px 0px 0px 0px;
 	}
+}
+.content{
+	padding:0px 0px 0px 0px;
 }

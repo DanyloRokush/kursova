@@ -77,18 +77,18 @@ function setSuccessFor(input){
 
 
 function isFirstName(firstName){
-	return /^[A-Z]{1}(([a-z]{1,})?(\'{1})?[A-Za-z]{1,}){1}(([\s|\-]{1}[A-Za-z]{1}(([a-z]{1,})?(\'{1})?[a-z]{1,}){1}){1,})?$/.test(firstName);
+	return /^$/.test(firstName);
 
 }
 function isModel(model){
-	return /^[A-Z]{1}(([a-z]{1,})?(\'{1})?[A-Za-z]{1,}){1}(([\s|\-]{1}[A-Za-z]{1}(([a-z]{1,})?(\'{1})?[a-z]{1,}){1}){1,})?$/.test(lastName);
+	return /^$/.test(lastName);
 }
 
 function isYear(year){
-	return /([A-Za-z!#$%&'*+\-\/=?^{|}~z](([.](?![@]))?[\w!#$%&'*+\-\/=?^{|}~z])+)+@([A-za-z0-9]{1,63}|[-.](?![-.])){1,12}\.[^-][a-zA-Z]{2,6}/.test(eMail);
+	return /^$/.test(eMail);
 }
 function isNumber(number){
-	return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/.test(pass);
+	return /^$/.test(pass);
 }
 
 
