@@ -1,22 +1,48 @@
+
 * {
 	margin:0;
 	padding: 0;
+    box-sizing: border-box;
 }
 html,body{
   margin:0;
   padding:0;
+  font-family: arial;
+
+}
+/*html{
+  --primary-color:#2f80ed;
+}
+html[data-theme='dark']{
+  --primary-color:#fff;
+}*/
+
+
+body{
+   background-color: white;
 }
 
+margin-bottom: 0.5rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
 
 .intro {
-
     width: 100%;
     height: 100vh;
     background: url(../img/main.jpg) no-repeat center;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: cover; /* Современные браузеры */
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: cover; 
 }
 
 .info {
@@ -36,42 +62,15 @@ html,body{
 
 
  
-.text-center {
-  text-align: center !important;
+.center {
+  text-align: center
 }
 .regtext{
 	width:10em;
 	margin-left:auto;
 	margin-right:auto;
 }
-
-
-
-
-
-
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-  margin-bottom: 0.5rem;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-.container-fluid,.container
+.box,.container
  {
   width: 100%;
   padding-right: 15px;
@@ -86,34 +85,28 @@ svg {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  padding-top: 1rem !important;
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
+  padding-top: 1rem;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 
 
-.col-12,
-.col-sm-6,
-.col-md-4{
+.serv-column{
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-
-
-.col-12 {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
 
+
 @media (min-width: 576px) {
 
-  .col-sm-6 {
+  .serv-column{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
@@ -122,7 +115,7 @@ svg {
 
 @media (min-width: 768px) {
  
-   .col-md-4 {
+   .serv-column{
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
@@ -134,10 +127,10 @@ svg {
 .question {
     color: #fff;
     background: url(../img/question_bg.jpg) no-repeat fixed center;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: cover; /* Современные браузеры */
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: cover; 
     padding-top: 30px;
 }
 
@@ -145,20 +138,15 @@ svg {
 .group {
     width: 50%;
 }
-body{
-      font-family: arial;
-}
 
 @media  (max-width: 768px) {
  .info{
     font-size:25px;
     width:100%;
   }
-
     .group {
         width: 100%;
     }
-
     .car {
         display: none;
     }
@@ -172,57 +160,15 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.w-50 {
-  width: 50% !important;
-}
-
-.w-75 {
-  width: 75% !important;
-}
-
-.w-100 {
-  width: 100% !important;
+.brand-width {
+  width: 50%;
 }
 
 
 
-.h-25 {
-  height: 25% !important;
+.serv-width {
+  width: 100%;
 }
-
-.h-50 {
-  height: 50% !important;
-}
-
-.h-75 {
-  height: 75% !important;
-}
-
 
 /*REG*/
 .form-control.success input{
@@ -262,6 +208,9 @@ button:hover{
   padding: 10px;
   width: 60%;
 }
+
+
+/*footer*/
 footer {
 	margin:0px 0px 0px 0px;
     position:absolute;
@@ -288,9 +237,9 @@ footer a:hover{
 	transition:0.5s;
 
 }
-.col{
+.column{
+	padding-bottom:10px;
   width:15%;
-padding-bottom:10px;
 
 }
 .form{
@@ -303,6 +252,7 @@ padding-bottom:10px;
 .car{
   width:50%;
   height:50%;
+  transition:1s;
 }
 
 .submit{

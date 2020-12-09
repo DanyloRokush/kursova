@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Auto-servise</title>
+	<link rel="stylesheet" type="text/css" href="code/night.css">
 	<link rel="stylesheet" type="text/css" href="code/record.css">
 	<link rel="stylesheet" type="text/css" href="code/menu.css">
 	<meta charset="UTF-8">
@@ -14,7 +15,7 @@
 			<div class="container2">
 				<div class="header__body">
 					<a href="#" class="header__logo">
-						<img src="img/Logo.svg">
+						<img src="img/Logo.png">
 					</a>
 					<div class="header__burger">
 						<span></span>
@@ -43,19 +44,22 @@
 		</header>
 	</div>
 	</menu>
+
 	<content>
+		<div id="night-mode">
+		</div>
 		<div class="intro">
 		</div>
 		<!-- Steps -->
 <div class="steps">
   
-    <div class="container  pt-5 pb-5">
-          <div class="row justify-content-around  text-center">
+    <div class="container">
+          <div class="row">
 
                   
-                      <div class="steps_block col-7 col-md-3 mb-2">
+                      <div class="steps_block">
                           <a href="#brand">
-                        <img class="w-100 " src="img/cars/car_mark.png">
+                        <img class="mark-width" src="img/cars/car_mark.png">
                         <h4>Вибір марки </h4>
                         <p>Впишіть або виберіть марку авто.</p>
                       </a>
@@ -63,9 +67,9 @@
                   
 
                   
-                      <div class="steps_block col-7 col-md-3 mb-2">
+                      <div class="steps_block">
                           <a href="#model">
-                          <img class="w-100" src="img/cars/car_model.png">
+                          <img class="mark-width" src="img/cars/car_model.png">
                           <h4>Вибір моделі </h4>
                           <p>Впишіть або виберіть модель авто.</p>
                         </a>
@@ -73,9 +77,9 @@
                       
 
                  
-                        <div class="steps_block col-7 col-md-3 mb-2">
+                        <div class="steps_block">
                             <a href="#year">
-                            <img class="w-100" src="img/cars/car_year.png">
+                            <img class="mark-width" src="img/cars/car_year.png">
                             <h4>Вибір року </h4>
                             <p>Впишіть або виберіть рік авто.</p>
                             </a>
@@ -124,6 +128,7 @@
       </div>
 	</footer>	
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" src="code/night.js"></script>
 <script src="code/menu.js"></script>
 <script type="text/javascript" src="code/record.js"></script>
 </body>
