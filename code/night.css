@@ -1,3 +1,4 @@
+/*кнопка темної теми*/
 #night-mode{
 	z-index:2;
 	width:25px;
@@ -15,8 +16,9 @@
 	transition:02s;
 	transform: rotate(180deg);
 }
-html{
 
+html{
+/*змінні для темної теми(всіх сторінок)*/
 }
 html[data-theme='dark']{
   --primary-color:#2a3341;

@@ -15,49 +15,35 @@ html{
   --secondary-color:#343a40;
   --text-white:black;
 }
-
-
-
 body{
    background-color: var(--primary-color);
 }
-
-margin-bottom: 0.5rem;
-}
-
 img {
   vertical-align: middle;
   border-style: none;
 }
-
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
-
 .intro {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/main.jpg) no-repeat center;
-    -moz-background-size: 100%; 
-    -webkit-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: cover; 
+  width: 100%;
+  height: 100vh;
+  background: url(../img/main.jpg) no-repeat center;
+  -moz-background-size: 100%; 
+  -webkit-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: cover; 
 }
 
 .info {
-    padding-top:20px;
-    padding-left:20px;
-    position: absolute;
-    width:510px;
-    height:100px;
-    left: 0px;
-    bottom: 0px;
-    color: #fff;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
-    font-size: 25px;
-
-    text-transform: uppercase;
+  padding-top:20px;
+  padding-left:20px;
+  position: absolute;
+  width:510px;
+  height:100px;
+  left: 0px;
+  bottom: 0px;
+  color: #fff;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
 .pt-3{
@@ -91,9 +77,6 @@ svg {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
-
-
 .serv-column{
   position: relative;
   width: 100%;
@@ -102,65 +85,58 @@ svg {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+   margin-bottom: 1rem;
+}
+/* min-width 576px */
+.serv-column576{
+  -ms-flex: 0 0 50% !important;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+}
+
+/* min-width 768px */
+
+.serv-column768{
+ -ms-flex: 0 0 33.333333% !important;
+ flex: 0 0 33.333333% !important;
+ max-width: 33.333333% !important;
 }
 
 
 
-@media (min-width: 576px) {
 
-  .serv-column{
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (min-width: 768px) {
- 
-   .serv-column{
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-
-
-
-}
 .question {
-    color: #fff;
-    background: url(../img/question_bg.jpg) no-repeat fixed center;
-    -moz-background-size: 100%; 
-    -webkit-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: cover; 
-    padding-top: 30px;
+  color: #fff;
+  background: url(../img/question_bg.jpg) no-repeat fixed center;
+  -moz-background-size: 100%; 
+  -webkit-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: cover; 
+  padding-top: 30px;
 }
 
 
 .group {
-    width: 50%;
+  width: 50%;
 }
 
-@media  (max-width: 768px) {
- .info{
-    font-size:25px;
-    width:100%;
-  }
-    .group {
-        width: 100%;
+/*max-width: 768px*/
+    .info768{
+      font-size:25px !important;
+      width:100% !important;
     }
-    .car {
-        display: none;
+    .group768 {
+      width: 100% !important;
     }
-    .carIcon{
-      display:none;
+    .car768 {
+      display: none !important;
     }
-    .form{
-    	width:100%;
+    .carIcon768{
+      display:none !important;
     }
-}
-
-
+    .form768{
+    	width:100% !important;
+    }
 
 .brand-width {
   width: 50%;
@@ -181,6 +157,32 @@ svg {
 .form-control.error input{
   border-radius: 6px;
   border: 2px solid #e74c3c;
+}
+.column{
+  padding-bottom:10px;
+  width:15%;
+
+}
+.form{
+  width:20em;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+.car{
+  width:50%;
+  height:50%;
+  transition:1s;
+}
+
+.submit{
+  height:20px;
+  width:100px;
+  margin-top:20px;
+  margin-left:110px;
+  margin-right:110px;
+
 }
 button{
 	background-color: green;
@@ -215,10 +217,10 @@ button:hover{
 /*footer*/
 footer {
 	margin:0px 0px 0px 0px;
-    position:absolute;
-    background-color:var(--secondary-color);
-    width:100%;
-    height:50px;
+  position:absolute;
+  background-color:var(--secondary-color);
+  width:100%;
+  height:50px;
 }
 .icons{
   padding-left:10px;
@@ -228,10 +230,10 @@ footer {
 }
 
 footer .container {
-    padding-top: 12px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  padding-top: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 footer a:hover{
@@ -239,29 +241,4 @@ footer a:hover{
 	transition:0.5s;
 
 }
-.column{
-	padding-bottom:10px;
-  width:15%;
 
-}
-.form{
-	width:20em;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:100px;
-	margin-bottom:100px;
-}
-.car{
-  width:50%;
-  height:50%;
-  transition:1s;
-}
-
-.submit{
-	height:20px;
-	width:100px;
-	margin-top:20px;
-	margin-left:110px;
-margin-right:110px;
-
-}
